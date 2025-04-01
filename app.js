@@ -18,8 +18,8 @@ app.use(express.json());
 mongoose.connect('mongodb+srv://sujalmahekar:jjs5ENSLOsmubPpM@cluster0.sseruom.mongodb.net/?retryWrites=true&w=majority')
 .then(()=>{
     console.log('db connected');
-}).catch((err)=>{
-    console.log('db is not connected',err)
+}).catch((error)=>{
+    console.log('db is not connected',error)
 })
 
 //task-1 -> create route for user registration
